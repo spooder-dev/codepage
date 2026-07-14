@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A Surprise For Kish 🌸</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <div class="scene" id="scene">
+
+      <!-- Background -->
+      <img class="bg-image" src="images/background.png" alt="" onerror="this.style.display='none'">
+      <div class="sky-fallback"></div>
+
+      <!-- Ambient layers (built with code so they always work, even before you add images) -->
+      <div class="clouds-layer" id="cloudsLayer"></div>
+      <div class="petals-layer" id="petalsLayer"></div>
+      <div class="sparkle-layer" id="sparkleLayer"></div>
+      <div class="ground"></div>
+
+      <!-- Character -->
+      <img class="chibi idle" id="chibi" src="images/chibi.gif" alt="Kish's chibi" onerror="this.classList.add('img-missing')">
+
+      <!-- Dialogue box -->
+      <div class="dialogue-wrapper">
+        <div class="dialogue-box" id="dialogueBox">
+          <p class="dialogue-text" id="dialogueText"></p>
+        </div>
+
+        <!-- Hearts -->
+        <div class="hearts-row" id="heartsRow">
+          <span class="heart-slot" data-index="0">♡</span>
+          <span class="heart-slot" data-index="1">♡</span>
+          <span class="heart-slot" data-index="2">♡</span>
+          <span class="heart-slot" data-index="3">♡</span>
+        </div>
+
+        <!-- Keypad -->
+        <div class="keypad" id="keypad">
+          <button class="key" data-key="1">1</button>
+          <button class="key" data-key="2">2</button>
+          <button class="key" data-key="3">3</button>
+          <button class="key" data-key="4">4</button>
+          <button class="key" data-key="5">5</button>
+          <button class="key" data-key="6">6</button>
+          <button class="key" data-key="7">7</button>
+          <button class="key" data-key="8">8</button>
+          <button class="key" data-key="9">9</button>
+          <button class="key key-clr" data-key="clr">CLR</button>
+          <button class="key" data-key="0">0</button>
+          <button class="key key-del" data-key="del">⌫</button>
+        </div>
+      </div>
+
+      <!-- Unlock / transition overlay -->
+      <div class="unlock-overlay" id="unlockOverlay"></div>
+    </div>
+  </div>
+
+  <audio id="clickSound" src="audio/click.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
