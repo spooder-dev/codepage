@@ -8,10 +8,10 @@ const CONFIG = {
 
   DIALOGUE: {
     greeting: [
-      "Hello, 💖 Kish!",
+      "Hello, Kish, my Love 💖",
       "I've been waiting for you...",
       "Before I show you your surprise,",
-      "tell me your birthday. 🌸"
+      "Enter the code (HINT:Birthday, Month then Date!) 🌸"
     ],
     wrong: [
       "Hmm...",
@@ -20,7 +20,6 @@ const CONFIG = {
     ],
     correct: [
       "Yay!!",
-      "Happy Birthday, 💖 Kish!",
       "I have something special for you..."
     ],
     unlocking: "Let's go..."
